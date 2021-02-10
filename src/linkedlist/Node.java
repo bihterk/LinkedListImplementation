@@ -10,7 +10,7 @@ public class Node<T> {
     public Node() {
     }
 
-    public Node(T data, Node next) {
+    public Node(T data, Node<T> next) {
         this.data = data;
         this.next = next;
     }
@@ -76,7 +76,7 @@ public class Node<T> {
         return Objects.hash(data, next);
     }
 
-    //  klasik sekilde ekleme yapan metot
+    //  classical method for insert
 //    public void insert(T data) {
 //        Node<T> newNode = new Node<>(data, null);
 //        if(head==null) {
